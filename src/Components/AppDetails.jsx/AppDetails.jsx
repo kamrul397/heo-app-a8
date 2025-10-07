@@ -15,7 +15,7 @@ const AppDetails = () => {
       })
       .catch((err) => console.error(err));
   }, [id]);
-
+  console.log(app);
   if (!app) return <p className="text-center mt-8">Loading app details...</p>;
 
   return (

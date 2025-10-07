@@ -1,6 +1,6 @@
 [
   {
-    "image": "./images/demo-app (1).webp",
+    "image": "/images/demo-app (1).webp",
     "title": "ChatEase",
     "companyName": "NovaSoft Ltd.",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (2).webp",
+    "image": "/images/demo-app (2).webp",
     "title": "SnapEdit",
     "companyName": "PixelWorks Studio",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (3).webp",
+    "image": "/images/demo-app (3).webp",
     "title": "FitTrack Pro",
     "companyName": "ActiveLife Inc.",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (4).webp",
+    "image": "/images/demo-app (4).webp",
     "title": "NoteMate",
     "companyName": "IdeaFlow Technologies",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (5).webp",
+    "image": "/images/demo-app (5).webp",
     "title": "BudgetBuddy",
     "companyName": "FinTrack Apps",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (6).webp",
+    "image": "/images/demo-app (6).webp",
     "title": "WeatherNow",
     "companyName": "SkyCast Systems",
     "id": 6,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (1).webp",
+    "image": "/images/demo-app (1).webp",
     "title": "ChatEase",
     "companyName": "NovaSoft Ltd.",
     "id": 1,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (2).webp",
+    "image": "/images/demo-app (2).webp",
     "title": "SnapEdit",
     "companyName": "PixelWorks Studio",
     "id": 2,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (3).webp",
+    "image": "/images/demo-app (3).webp",
     "title": "FitTrack Pro",
     "companyName": "ActiveLife Inc.",
     "id": 3,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (4).webp",
+    "image": "/images/demo-app (4).webp",
     "title": "NoteMate",
     "companyName": "IdeaFlow Technologies",
     "id": 4,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (5).webp",
+    "image": "/images/demo-app (5).webp",
     "title": "BudgetBuddy",
     "companyName": "FinTrack Apps",
     "id": 5,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (6).webp",
+    "image": "/images/demo-app (6).webp",
     "title": "WeatherNow",
     "companyName": "SkyCast Systems",
     "id": 6,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (1).webp",
+    "image": "/images/demo-app (1).webp",
     "title": "ChatEase",
     "companyName": "NovaSoft Ltd.",
     "id": 1,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (2).webp",
+    "image": "/images/demo-app (2).webp",
     "title": "SnapEdit",
     "companyName": "PixelWorks Studio",
     "id": 2,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (3).webp",
+    "image": "/images/demo-app (3).webp",
     "title": "FitTrack Pro",
     "companyName": "ActiveLife Inc.",
     "id": 3,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (4).webp",
+    "image": "/images/demo-app (4).webp",
     "title": "NoteMate",
     "companyName": "IdeaFlow Technologies",
     "id": 4,
@@ -360,7 +360,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (5).webp",
+    "image": "/images/demo-app (5).webp",
     "title": "BudgetBuddy",
     "companyName": "FinTrack Apps",
     "id": 5,
@@ -378,7 +378,7 @@
     ]
   },
   {
-    "image": "./images/demo-app (6).webp",
+    "image": "/images/demo-app (6).webp",
     "title": "WeatherNow",
     "companyName": "SkyCast Systems",
     "id": 6,

@@ -15,13 +15,13 @@ const Apps = () => {
 
   return (
     <div>
-      <h2>This is Apps page</h2>
+      <h2 className="text-5xl text-center py-7 font-bold">All Apps</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {apps.map((app) => (
           <div
             key={app.id}
             onClick={() => navigate(`/apps/${app.id}`)} // <-- navigation on click
-            className="border rounded-lg shadow hover:shadow-gray-300 transition hover:scale-110 p-4 flex flex-col items-center text-center"
+            className="border rounded-lg shadow hover:shadow-gray-300 transition hover:scale-110 p-4 flex flex-col items-center text-center md:w-full w-4/5 mx-auto cursor-pointer"
           >
             <img
               src={app.image}
