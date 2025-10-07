@@ -1,0 +1,434 @@
+[
+  {
+    "image": "./images/demo-app (1).webp",
+    "title": "ChatEase",
+    "companyName": "NovaSoft Ltd.",
+    "id": 1,
+    "description": "An AI-powered messaging app that simplifies daily conversations with smart auto-replies and translation features.",
+    "size": 85,
+    "reviews": 23145,
+    "ratingAvg": 4.6,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 1023 },
+      { "name": "2 star", "count": 1542 },
+      { "name": "3 star", "count": 4562 },
+      { "name": "4 star", "count": 8210 },
+      { "name": "5 star", "count": 8808 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (2).webp",
+    "title": "SnapEdit",
+    "companyName": "PixelWorks Studio",
+    "id": 2,
+    "description": "Professional photo editing tool with AI filters, background remover, and easy retouching features.",
+    "size": 120,
+    "reviews": 58234,
+    "ratingAvg": 4.8,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 2251 },
+      { "name": "2 star", "count": 3124 },
+      { "name": "3 star", "count": 6541 },
+      { "name": "4 star", "count": 14232 },
+      { "name": "5 star", "count": 32086 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (3).webp",
+    "title": "FitTrack Pro",
+    "companyName": "ActiveLife Inc.",
+    "id": 3,
+    "description": "Your personal health and fitness tracker that monitors workouts, heart rate, and sleep patterns.",
+    "size": 64,
+    "reviews": 17562,
+    "ratingAvg": 4.4,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 1242 },
+      { "name": "2 star", "count": 1423 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 7497 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (4).webp",
+    "title": "NoteMate",
+    "companyName": "IdeaFlow Technologies",
+    "id": 4,
+    "description": "A minimalist note-taking app designed for quick jotting, voice memos, and smart cloud sync.",
+    "size": 42,
+    "reviews": 8542,
+    "ratingAvg": 4.2,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 620 },
+      { "name": "2 star", "count": 980 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 1942 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (5).webp",
+    "title": "BudgetBuddy",
+    "companyName": "FinTrack Apps",
+    "id": 5,
+    "description": "Smart expense tracker with AI-based savings suggestions and detailed spending analytics.",
+    "size": 58,
+    "reviews": 15212,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 932 },
+      { "name": "2 star", "count": 1211 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 5169 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (6).webp",
+    "title": "WeatherNow",
+    "companyName": "SkyCast Systems",
+    "id": 6,
+    "description": "Real-time weather updates, radar maps, and severe weather alerts with elegant design.",
+    "size": 49,
+    "reviews": 20543,
+    "ratingAvg": 4.3,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 1021 },
+      { "name": "2 star", "count": 1433 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 5600 },
+      { "name": "5 star", "count": 7389 }
+    ]
+  },
+  {
+    "image": "https://e7.pngegg.com/pngimages/134/63/png-clipart-ipod-touch-app-store-apple-widget-random-icons-angle-logo-thumbnail.png",
+    "title": "Soundify",
+    "companyName": "EchoStream Media",
+    "id": 7,
+    "description": "Stream your favorite music, podcasts, and audiobooks — anytime, anywhere.",
+    "size": 95,
+    "reviews": 80234,
+    "ratingAvg": 4.7,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 6200 },
+      { "name": "2 star", "count": 8400 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 27000 },
+      { "name": "5 star", "count": 26634 }
+    ]
+  },
+  {
+    "image": "https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-shuffle-icon-png-image_889552.jpg",
+    "title": "LangLearn",
+    "companyName": "GlobalEd Labs",
+    "id": 8,
+    "description": "Learn over 25 languages with fun lessons, quizzes, and AI pronunciation checks.",
+    "size": 102,
+    "reviews": 36200,
+    "ratingAvg": 4.9,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 1450 },
+      { "name": "2 star", "count": 1750 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 23800 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (1).webp",
+    "title": "ChatEase",
+    "companyName": "NovaSoft Ltd.",
+    "id": 1,
+    "description": "An AI-powered messaging app that simplifies daily conversations with smart auto-replies and translation features.",
+    "size": 85,
+    "reviews": 23145,
+    "ratingAvg": 4.6,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 1023 },
+      { "name": "2 star", "count": 1542 },
+      { "name": "3 star", "count": 4562 },
+      { "name": "4 star", "count": 8210 },
+      { "name": "5 star", "count": 8808 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (2).webp",
+    "title": "SnapEdit",
+    "companyName": "PixelWorks Studio",
+    "id": 2,
+    "description": "Professional photo editing tool with AI filters, background remover, and easy retouching features.",
+    "size": 120,
+    "reviews": 58234,
+    "ratingAvg": 4.8,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 2251 },
+      { "name": "2 star", "count": 3124 },
+      { "name": "3 star", "count": 6541 },
+      { "name": "4 star", "count": 14232 },
+      { "name": "5 star", "count": 32086 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (3).webp",
+    "title": "FitTrack Pro",
+    "companyName": "ActiveLife Inc.",
+    "id": 3,
+    "description": "Your personal health and fitness tracker that monitors workouts, heart rate, and sleep patterns.",
+    "size": 64,
+    "reviews": 17562,
+    "ratingAvg": 4.4,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 1242 },
+      { "name": "2 star", "count": 1423 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 7497 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (4).webp",
+    "title": "NoteMate",
+    "companyName": "IdeaFlow Technologies",
+    "id": 4,
+    "description": "A minimalist note-taking app designed for quick jotting, voice memos, and smart cloud sync.",
+    "size": 42,
+    "reviews": 8542,
+    "ratingAvg": 4.2,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 620 },
+      { "name": "2 star", "count": 980 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 1942 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (5).webp",
+    "title": "BudgetBuddy",
+    "companyName": "FinTrack Apps",
+    "id": 5,
+    "description": "Smart expense tracker with AI-based savings suggestions and detailed spending analytics.",
+    "size": 58,
+    "reviews": 15212,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 932 },
+      { "name": "2 star", "count": 1211 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 5169 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (6).webp",
+    "title": "WeatherNow",
+    "companyName": "SkyCast Systems",
+    "id": 6,
+    "description": "Real-time weather updates, radar maps, and severe weather alerts with elegant design.",
+    "size": 49,
+    "reviews": 20543,
+    "ratingAvg": 4.3,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 1021 },
+      { "name": "2 star", "count": 1433 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 5600 },
+      { "name": "5 star", "count": 7389 }
+    ]
+  },
+  {
+    "image": "https://e7.pngegg.com/pngimages/134/63/png-clipart-ipod-touch-app-store-apple-widget-random-icons-angle-logo-thumbnail.png",
+    "title": "Soundify",
+    "companyName": "EchoStream Media",
+    "id": 7,
+    "description": "Stream your favorite music, podcasts, and audiobooks — anytime, anywhere.",
+    "size": 95,
+    "reviews": 80234,
+    "ratingAvg": 4.7,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 6200 },
+      { "name": "2 star", "count": 8400 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 27000 },
+      { "name": "5 star", "count": 26634 }
+    ]
+  },
+  {
+    "image": "https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-shuffle-icon-png-image_889552.jpg",
+    "title": "LangLearn",
+    "companyName": "GlobalEd Labs",
+    "id": 8,
+    "description": "Learn over 25 languages with fun lessons, quizzes, and AI pronunciation checks.",
+    "size": 102,
+    "reviews": 36200,
+    "ratingAvg": 4.9,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 1450 },
+      { "name": "2 star", "count": 1750 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 23800 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (1).webp",
+    "title": "ChatEase",
+    "companyName": "NovaSoft Ltd.",
+    "id": 1,
+    "description": "An AI-powered messaging app that simplifies daily conversations with smart auto-replies and translation features.",
+    "size": 85,
+    "reviews": 23145,
+    "ratingAvg": 4.6,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 1023 },
+      { "name": "2 star", "count": 1542 },
+      { "name": "3 star", "count": 4562 },
+      { "name": "4 star", "count": 8210 },
+      { "name": "5 star", "count": 8808 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (2).webp",
+    "title": "SnapEdit",
+    "companyName": "PixelWorks Studio",
+    "id": 2,
+    "description": "Professional photo editing tool with AI filters, background remover, and easy retouching features.",
+    "size": 120,
+    "reviews": 58234,
+    "ratingAvg": 4.8,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 2251 },
+      { "name": "2 star", "count": 3124 },
+      { "name": "3 star", "count": 6541 },
+      { "name": "4 star", "count": 14232 },
+      { "name": "5 star", "count": 32086 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (3).webp",
+    "title": "FitTrack Pro",
+    "companyName": "ActiveLife Inc.",
+    "id": 3,
+    "description": "Your personal health and fitness tracker that monitors workouts, heart rate, and sleep patterns.",
+    "size": 64,
+    "reviews": 17562,
+    "ratingAvg": 4.4,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 1242 },
+      { "name": "2 star", "count": 1423 },
+      { "name": "3 star", "count": 3200 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 7497 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (4).webp",
+    "title": "NoteMate",
+    "companyName": "IdeaFlow Technologies",
+    "id": 4,
+    "description": "A minimalist note-taking app designed for quick jotting, voice memos, and smart cloud sync.",
+    "size": 42,
+    "reviews": 8542,
+    "ratingAvg": 4.2,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 620 },
+      { "name": "2 star", "count": 980 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 1942 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (5).webp",
+    "title": "BudgetBuddy",
+    "companyName": "FinTrack Apps",
+    "id": 5,
+    "description": "Smart expense tracker with AI-based savings suggestions and detailed spending analytics.",
+    "size": 58,
+    "reviews": 15212,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 932 },
+      { "name": "2 star", "count": 1211 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 5169 }
+    ]
+  },
+  {
+    "image": "./images/demo-app (6).webp",
+    "title": "WeatherNow",
+    "companyName": "SkyCast Systems",
+    "id": 6,
+    "description": "Real-time weather updates, radar maps, and severe weather alerts with elegant design.",
+    "size": 49,
+    "reviews": 20543,
+    "ratingAvg": 4.3,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 1021 },
+      { "name": "2 star", "count": 1433 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 5600 },
+      { "name": "5 star", "count": 7389 }
+    ]
+  },
+  {
+    "image": "https://e7.pngegg.com/pngimages/134/63/png-clipart-ipod-touch-app-store-apple-widget-random-icons-angle-logo-thumbnail.png",
+    "title": "Soundify",
+    "companyName": "EchoStream Media",
+    "id": 7,
+    "description": "Stream your favorite music, podcasts, and audiobooks — anytime, anywhere.",
+    "size": 95,
+    "reviews": 80234,
+    "ratingAvg": 4.7,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 6200 },
+      { "name": "2 star", "count": 8400 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 27000 },
+      { "name": "5 star", "count": 26634 }
+    ]
+  },
+  {
+    "image": "https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-shuffle-icon-png-image_889552.jpg",
+    "title": "LangLearn",
+    "companyName": "GlobalEd Labs",
+    "id": 8,
+    "description": "Learn over 25 languages with fun lessons, quizzes, and AI pronunciation checks.",
+    "size": 102,
+    "reviews": 36200,
+    "ratingAvg": 4.9,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 1450 },
+      { "name": "2 star", "count": 1750 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 7000 },
+      { "name": "5 star", "count": 23800 }
+    ]
+  }
+]
