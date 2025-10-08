@@ -13,29 +13,16 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import NotFound from "../../Pages/AppNotFound/AppNotFound";
+import { useInstalledApps } from "../../context/InstalledAppsContext";
 
 const AppDetails = () => {
-  const [installed, setInstalled] = useState(false);
-
-  const handleInstall = () => {
-    setInstalled(true);
-
-    // Get existing installed apps
-    const installedApps =
-      JSON.parse(localStorage.getItem("installedApps")) || [];
-
-    // Avoid duplicates
-    if (!installedApps.find((a) => a.id === app.id)) {
-      installedApps.push(app);
-      localStorage.setItem("installedApps", JSON.stringify(installedApps));
-    }
-  };
-
+  const { installedApps, setInstalledApps } = useInstalledApps();
   const { id } = useParams();
-  const [app, setApp] = useState(null);
 
+  const [app, setApp] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // Load the app data
   useEffect(() => {
     setLoading(true);
     fetchJson("trendingApps.json")
@@ -47,11 +34,20 @@ const AppDetails = () => {
       .finally(() => setLoading(false));
   }, [id]);
 
+  // Determine if this app is already installed (from context)
+  const isInstalled = app ? installedApps.some((a) => a.id === app.id) : false;
+
+  // Install the app
+  const handleInstall = () => {
+    if (app && !isInstalled) {
+      setInstalledApps([...installedApps, app]);
+    }
+  };
+
   if (loading)
     return <p className="text-center mt-8">Loading app details...</p>;
-  if (!app) return <NotFound></NotFound>;
+  if (!app) return <NotFound />;
 
-  // 🧩 Destructure properties here
   const {
     image,
     title,
@@ -65,25 +61,22 @@ const AppDetails = () => {
 
   return (
     <>
-      <div className="py-8 px-4 flex  flex-col md:flex-row mx-auto gap-10">
+      <div className="py-8 px-4 flex flex-col md:flex-row mx-auto gap-10">
         <div>
-          {/* img */}
           <img
             src={image}
             alt={title}
             className="w-full max-w-sm mx-auto mb-6 rounded-lg shadow-lg"
           />
-
           <button
             onClick={handleInstall}
             className={`px-6 py-3 rounded-md w-full h-2/12 text-white text-2xl ${
-              installed ? "bg-gray-600" : "bg-blue-600 hover:bg-blue-700"
+              isInstalled ? "bg-gray-600" : "bg-blue-600 hover:bg-blue-700"
             }`}
           >
-            {installed ? "Installed" : "Install Now "}
+            {isInstalled ? "Installed" : "Install Now"}
           </button>
         </div>
-        {/* title & details */}
         <div>
           <h1 className="text-3xl font-bold mb-2">{title}</h1>
           <p className="text-gray-500 mb-4">
@@ -94,9 +87,8 @@ const AppDetails = () => {
           </p>
           <div className="flex gap-4 flex-row">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full md:m-0 m-6">
-              {/* Download */}
               <div className="flex flex-col items-center gap-2 text-orange-500 border p-4 rounded-lg">
-                <IoMdCloudDownload size={70} className="text-orange-500" />
+                <IoMdCloudDownload size={70} />
                 <span className="text-gray-800 text-xl">Downloads</span>
                 <span className="md:text-5xl text-4xl font-bold text-orange-600">
                   {downloads >= 1000000
@@ -104,30 +96,24 @@ const AppDetails = () => {
                     : downloads.toLocaleString()}
                 </span>
               </div>
-
-              {/* Rating */}
               <div className="flex flex-col items-center gap-2 text-orange-500 border p-4 rounded-lg">
-                <BiSolidStar size={70} className="text-blue-500" />
+                <BiSolidStar size={70} />
                 <span className="text-gray-800 text-xl">Average Rating</span>
                 <span className="md:text-5xl text-4xl font-bold text-blue-600">
                   {ratingAvg}
                 </span>
               </div>
-
-              {/* Reviews */}
               <div className="flex flex-col items-center gap-2 text-orange-500 border p-4 rounded-lg">
-                <MdPreview size={70} className="text-green-600" />
+                <MdPreview size={70} />
                 <span className="text-gray-800 text-xl">Total Reviews</span>
                 <span className="md:text-5xl text-4xl font-bold text-green-600">
                   {reviews.toLocaleString()}
                 </span>
               </div>
-
-              {/* App Size */}
               <div className="flex flex-col items-center gap-2 text-orange-500 border p-4 rounded-lg">
-                <MdOutlineStorage size={70} className="text-red-400" />
+                <MdOutlineStorage size={70} />
                 <span className="text-gray-800 text-xl">App Size</span>
-                <span className="md:text-5xl text-4xl font-bold text-green-600">
+                <span className="md:text-5xl text-4xl font-bold text-green-600 text-center">
                   {size} MB
                 </span>
               </div>
@@ -135,7 +121,7 @@ const AppDetails = () => {
           </div>
         </div>
       </div>
-      {/* Description & Chart */}
+
       <div className="mt-5 bg-white p-6 rounded-lg shadow">
         <h2 className="text-2xl font-bold mb-4">Ratings</h2>
         <ResponsiveContainer width="100%" height={350}>
@@ -143,7 +129,7 @@ const AppDetails = () => {
             data={app.ratings.slice().reverse()}
             layout="vertical"
             margin={{ top: 10, right: 20, left: 40, bottom: 0 }}
-            barCategoryGap="40%" // 👈 adds vertical space between bars
+            barCategoryGap="40%"
           >
             <XAxis type="number" />
             <YAxis dataKey="name" type="category" />
@@ -157,7 +143,7 @@ const AppDetails = () => {
           </BarChart>
         </ResponsiveContainer>
       </div>
-      {/* description charts */}
+
       <div className="mt-5 bg-white p-6 rounded-lg shadow">
         <h1 className="text-3xl font-semibold mb-5">Description</h1>
         <p>{description}</p>

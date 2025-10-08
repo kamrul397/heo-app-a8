@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaGit, FaGithub } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import logoPNG from "../../assets/logo.png";
+import { useInstalledApps } from "../../context/InstalledAppsContext";
 
 const Navbar = () => {
+  // const [installedAppsCount, setInstalledAppsCount] = useState(0);
+  // useEffect(() => {
+  //   // Read from localStorage when component mounts
+  //   const apps = JSON.parse(localStorage.getItem("installedApps")) || [];
+  //   setInstalledAppsCount(apps.length);
+  // }, []);
+  const { installedApps } = useInstalledApps();
   const links = (
     <>
       <li>
@@ -23,7 +31,7 @@ const Navbar = () => {
           to="/installation"
           className="m-2 px-3 py-1 rounded hover:bg-gray-200"
         >
-          Installation
+          Installed Apps {installedApps.length}
         </NavLink>
       </li>
     </>

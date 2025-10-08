@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useInstalledApps } from "../../context/InstalledAppsContext";
 
 const Installation = () => {
-  const [installedApps, setInstalledApps] = useState([]);
+  const { installedApps, setInstalledApps } = useInstalledApps();
 
-  useEffect(() => {
-    const apps = JSON.parse(localStorage.getItem("installedApps")) || [];
-    setInstalledApps(apps);
-  }, []);
+  // Function to uninstall an app
+  const handleUninstall = (appId) => {
+    const updatedApps = installedApps.filter((app) => app.id !== appId);
+    setInstalledApps(updatedApps);
+  };
 
   if (installedApps.length === 0)
     return <p className="text-center mt-8">No apps installed yet.</p>;
@@ -25,9 +26,17 @@ const Installation = () => {
           />
           <h2 className="text-xl font-bold">{app.title}</h2>
           <p className="text-gray-500">{app.companyName}</p>
-          <span className="mt-2 px-3 py-1 bg-green-600 text-white rounded">
-            Installed
-          </span>
+          <div className="mt-2 flex gap-2">
+            <span className="px-3 py-1 bg-green-600 text-white rounded">
+              Installed
+            </span>
+            <button
+              onClick={() => handleUninstall(app.id)}
+              className="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700"
+            >
+              Uninstall
+            </button>
+          </div>
         </div>
       ))}
     </div>
