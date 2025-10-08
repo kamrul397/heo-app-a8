@@ -1,31 +1,41 @@
 import React from "react";
 import logoPNG from "../../assets/logo.png";
 import { CiFacebook, CiLinkedin, CiTwitter } from "react-icons/ci";
+
 const Footer = () => {
   return (
-    <div className=" py-10 px-5 bg-blue-900 flex flex-col gap-6 justify-center items-center mt-10">
-      <div className=" text-white rounded mt-10 flex justify-between flex-col md:flex-row items-center w-full ">
-        <div>
-          <a className="btn btn-ghost text-xl">
-            <img src={logoPNG} alt="Logo" className="w-8 h-8" />
-            <h3>HERO.IO</h3>
-          </a>
+    <footer className="bg-blue-900 text-white py-6 px-4">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <img src={logoPNG} alt="Logo" className="w-8 h-8" />
+          <h2 className="text-xl font-bold">HERO.IO</h2>
         </div>
-        {/* right div */}
-        <div className="">
-          <h1>Social Links</h1>
-          <div className="flex gap-4 text-2xl mt-2">
-            <CiTwitter />
-            <CiFacebook />
-            <CiLinkedin />
+
+        {/* Social Links */}
+        <div className="flex flex-col items-center md:items-end gap-1">
+          <h3 className="text-sm font-semibold">Follow Us</h3>
+          <div className="flex gap-3 text-xl mt-1">
+            <a href="#" className="hover:text-blue-300 transition-colors">
+              <CiTwitter />
+            </a>
+            <a href="#" className="hover:text-blue-300 transition-colors">
+              <CiFacebook />
+            </a>
+            <a href="#" className="hover:text-blue-300 transition-colors">
+              <CiLinkedin />
+            </a>
           </div>
         </div>
       </div>
 
-      <div>
-        <p className="text-white">Copyright © 2025 - All right reserved</p>
+      {/* Bottom copyright */}
+      <div className="mt-6 text-center border-t border-blue-800 pt-2">
+        <p className="text-xs text-gray-300">
+          © 2025 HERO.IO. All rights reserved.
+        </p>
       </div>
-    </div>
+    </footer>
   );
 };
 

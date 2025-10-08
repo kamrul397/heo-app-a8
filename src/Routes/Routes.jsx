@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,
+
     children: [
       {
         index: true,
@@ -39,9 +39,13 @@ export const router = createBrowserRouter([
         element: <AppDetails />,
       },
       {
-        path: "/footer",
-        element: <Footer></Footer>,
+        path: "*",
+        element: <ErrorPage></ErrorPage>,
       },
+      //   {
+      //     path: "/footer",
+      //     element: <Footer></Footer>,
+      //   },
     ],
   },
 ]);

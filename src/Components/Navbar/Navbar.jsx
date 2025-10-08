@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGit, FaGithub } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logoPNG from "../../assets/logo.png";
 
 const Navbar = () => {
@@ -56,16 +56,21 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">
-          <img src={logoPNG} alt="Logo" className="w-8 h-8" />
-          <h3>HERO.IO</h3>
-        </a>
+        <Link to="/">
+          <a className="btn btn-ghost text-xl">
+            <img src={logoPNG} alt="Logo" className="w-8 h-8" />
+            <h3>HERO.IO</h3>
+          </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-primary flex items-center gap-2">
+        <a
+          className="btn btn-primary flex items-center gap-2"
+          href="https://github.com/kamrul397"
+        >
           <FaGithub className="text-xl" />
           Contribute
         </a>
