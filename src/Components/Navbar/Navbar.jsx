@@ -31,7 +31,7 @@ const Navbar = () => {
           to="/installation"
           className="m-2 px-3 py-1 rounded hover:bg-gray-200"
         >
-          Installed Apps {installedApps.length}
+          Installed Apps ({installedApps.length})
         </NavLink>
       </li>
     </>
@@ -65,10 +65,10 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/">
-          <a className="btn btn-ghost text-xl">
+          <div className="btn btn-ghost text-xl">
             <img src={logoPNG} alt="Logo" className="w-8 h-8" />
             <h3>HERO.IO</h3>
-          </a>
+          </div>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

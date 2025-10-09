@@ -14,6 +14,7 @@ import {
 } from "recharts";
 import NotFound from "../../Pages/AppNotFound/AppNotFound";
 import { useInstalledApps } from "../../context/InstalledAppsContext";
+import { swalAlreadyInstalled, swalSuccess } from "../../Utilities/SwAl";
 
 const AppDetails = () => {
   const { installedApps, setInstalledApps } = useInstalledApps();
@@ -37,16 +38,24 @@ const AppDetails = () => {
   // Determine if this app is already installed (from context)
   const isInstalled = app ? installedApps.some((a) => a.id === app.id) : false;
 
-  // Install the app
   const handleInstall = () => {
     if (app && !isInstalled) {
       setInstalledApps([...installedApps, app]);
+      swalSuccess("App installed successfully!");
+    }
+    // Optional: added a message if user clicks the button but it's already installed
+    else if (isInstalled) {
+      swalAlreadyInstalled();
     }
   };
-
   if (loading)
     return <p className="text-center mt-8">Loading app details...</p>;
-  if (!app) return <NotFound />;
+  if (!app)
+    return (
+      <>
+        <NotFound />
+      </>
+    );
 
   const {
     image,
