@@ -7,7 +7,6 @@ import Installation from "../Components/Installation/Installation";
 import TrendingApps from "../Components/TrendingApps/TrendingApps";
 import { fetchJson } from "../Utilities/fetchData";
 import AppDetails from "../Components/AppDetails.jsx/AppDetails";
-import Footer from "../Components/Footer/Footer";
 
 export const router = createBrowserRouter([
   {

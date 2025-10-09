@@ -8,7 +8,7 @@ export const swalSuccess = (title = "Success!", text = "", timer = 2000) => {
     title,
     text,
     timer,
-    showConfirmButton: false,
+    confirmButtonText: "Okay",
   });
 };
 

@@ -78,6 +78,7 @@ const Navbar = () => {
         <a
           className="btn btn-primary flex items-center gap-2"
           href="https://github.com/kamrul397"
+          target="_blank"
         >
           <FaGithub className="text-xl" />
           Contribute

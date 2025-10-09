@@ -20,11 +20,19 @@ const Home = () => {
         </p>
 
         <div className="flex justify-center gap-4 mt-6">
-          <a href="#" className="btn btn-primary flex items-center gap-2">
+          <a
+            href="https://play.google.com/store/games?hl=en&gl=US"
+            target="_blank"
+            className="btn btn-primary flex items-center gap-2"
+          >
             <SiGoogleplay />
             <span>Google Play</span>
           </a>
-          <a href="#" className="btn btn-info flex items-center gap-2">
+          <a
+            href="https://www.apple.com/lae/app-store/"
+            target="_blank"
+            className="btn btn-info flex items-center gap-2"
+          >
             <SiGoogleplay />
             <span>App Store</span>
           </a>

@@ -4,13 +4,20 @@ import { fetchJson } from "../../Utilities/fetchData";
 import { IoMdCloudDownload } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { GoSearch } from "react-icons/go";
+import loaderIcon from "../../assets/logo.png"; // Ensure you have a loader icon in assets
 
 // You can use a simple Tailwind-styled spinner component
+// Rotating Image Loader Component
 const LoadingSpinner = () => (
-  <div className="flex justify-center items-center py-16">
-    {/* Simple Tailwind/CSS Spinner */}
-    <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"></div>
-    <p className="ml-4 text-xl text-gray-600">Loading Apps...</p>
+  <div className="flex flex-col justify-center items-center bg-white/70 backdrop-blur-sm z-50">
+    <img
+      src={loaderIcon}
+      alt="Loading..."
+      className="w-20 h-20 animate-spin" // Tailwind rotation animation
+    />
+    <p className="mt-4 text-gray-700 text-lg font-medium animate-pulse">
+      Loading...
+    </p>
   </div>
 );
 
@@ -23,21 +30,24 @@ const Apps = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // 2. Set loading to true before the fetch
     setIsLoading(true);
 
-    fetchJson("trendingApps.json")
-      .then((data) => {
-        setApps(data);
-      })
-      .catch((err) => {
-        console.error("Fetch Error:", err);
-        // Optional: Handle error display here
-      })
-      .finally(() => {
-        // 3. Set loading to false when fetch completes (success or failure)
-        setIsLoading(false);
-      });
+    // ⏳ Simulate a 5-second loading delay
+    const timer = setTimeout(() => {
+      fetchJson("trendingApps.json")
+        .then((data) => {
+          setApps(data);
+        })
+        .catch((err) => {
+          console.error("Fetch Error:", err);
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    }, 50);
+
+    // Cleanup timer if component unmounts early
+    return () => clearTimeout(timer);
   }, []);
 
   // Filter only by title
