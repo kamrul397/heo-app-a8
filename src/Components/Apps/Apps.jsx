@@ -70,7 +70,7 @@ const Apps = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 min-h-screen bg-gradient-to-br from-amber-100 via-blue-200 to-yellow-300">
       <h2 className="text-5xl text-center py-7 font-bold">All Apps</h2>
       <div className="flex justify-between items-center mb-4">
         {/* apps number */}

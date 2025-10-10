@@ -3,6 +3,7 @@ import { FaGit, FaGithub } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import logoPNG from "../../assets/logo.png";
 import { useInstalledApps } from "../../context/InstalledAppsContext";
+import { FiDownloadCloud, FiGrid, FiHome } from "react-icons/fi";
 
 const Navbar = () => {
   // const [installedAppsCount, setInstalledAppsCount] = useState(0);
@@ -15,13 +16,24 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/" end className="m-2 px-3 py-1 rounded hover:bg-gray-200">
+        <NavLink
+          to="/"
+          end
+          className="m-2 px-3 py-1 rounded hover:bg-gray-200 flex items-center"
+        >
+          {/* Home Icon */}
+          <FiHome className="mr-1" />
           Home
         </NavLink>
       </li>
 
       <li>
-        <NavLink to="/apps" className="m-2 px-3 py-1 rounded hover:bg-gray-200">
+        <NavLink
+          to="/apps"
+          className="m-2 px-3 py-1 rounded hover:bg-gray-200 flex items-center"
+        >
+          {/* Apps/Grid Icon */}
+          <FiGrid className="mr-1" />
           Apps
         </NavLink>
       </li>
@@ -29,8 +41,10 @@ const Navbar = () => {
       <li>
         <NavLink
           to="/installation"
-          className="m-2 px-3 py-1 rounded hover:bg-gray-200"
+          className="m-2 px-3 py-1 rounded hover:bg-gray-200 flex items-center"
         >
+          {/* Download/Installation Icon */}
+          <FiDownloadCloud className="mr-1" />
           Installed Apps ({installedApps.length})
         </NavLink>
       </li>
@@ -67,7 +81,7 @@ const Navbar = () => {
         <Link to="/">
           <div className="btn btn-ghost text-xl">
             <img src={logoPNG} alt="Logo" className="w-8 h-8" />
-            <h3>HERO.IO</h3>
+            <h3>AppsBazar</h3>
           </div>
         </Link>
       </div>
