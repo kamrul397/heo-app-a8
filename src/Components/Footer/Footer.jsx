@@ -3,6 +3,7 @@ import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 // We'll use a solid app icon for the logo placeholder
 import { FiGrid } from "react-icons/fi";
+import logoPNG from "../../assets/logo.png"; // Replace with your actual logo
 
 const Footer = () => {
   return (
@@ -14,8 +15,9 @@ const Footer = () => {
           <div className="col-span-2 lg:col-span-2 space-y-4">
             <div className="flex items-center gap-2 text-white">
               {/* Replace logoPNG with a sleek icon or your actual logo */}
-              <FiGrid className="w-6 h-6 text-blue-400" />
-              <h2 className="text-2xl font-extrabold tracking-wider mt-5">
+
+              <h2 className="text-2xl font-extrabold tracking-wider flex items-center gap-2.5 mt-5">
+                <img src={logoPNG} alt="" className="h-15 w-15" />
                 AppsBazar
               </h2>
             </div>
